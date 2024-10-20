@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="galeria.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="responsivo.css">
+    <title>Galeria</title>
+</head>
+<body>
+
+    <header id="header" class="galeria">
+
+        <div class="interface">
+
+            <section class="logo">
+                <img class="logo-branca" src="img/branca.png" alt="Logotipo do site">
+                <!-- <img class="logo-preta" src="img/opl1.png" alt="Logotipo do site"> -->
+            </section>
+
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="/swiper-master/galeria.html">Menu</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Serviços</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">Depoimentos</a>
+                        </li> -->
+                        <li>
+                            <a href="#">Ver Postagens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="btn-contato">
+                <a href="#">
+                    <button>Contactar</button>
+                </a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menumob-1"></div>
+                <div class="line-menumob-2"></div>
+            </div>
+
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="swiper-master/galeria.html">Serviços</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Serviços</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">Depoimentos</a>
+                        </li> -->
+                        <li>
+                            <a href="#">Ver Postagens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </div>
+
+    </header>
+
+    <div class="galeria-modal" onclick="fecharGaleria()">
+        <span>X</span>
+        <img src="" alt="">
+      </div>
+  
+      <section id="amor">
+        <div class="galeria">
+          <!-- primeira imagem -->
+          <div class="single-galeria w-2 h-2">
+            <img src="img/img01.jpg" alt="" onclick="abrirGaleria('img/img01.jpg')"/>
+          </div>
+          <!-- segunda imagem -->
+          <div class="single-galeria w-2">
+              <img src="img/img02.jpg" alt="" onclick="abrirGaleria('img/img02.jpg')"/>
+            </div>
+          <!-- terceira imagem -->
+          <div class="single-galeria">
+              <img src="img/img03.jpg" alt="" onclick="abrirGaleria('img/img03.jpg')"/>
+            </div>
+          <!-- quarta imagem -->
+          <div class="single-galeria h-2">
+              <img src="img/img04.jpg" alt="" onclick="abrirGaleria('img/img04.jpg')"/>
+            </div>
+          <!-- quinta imagem -->
+          <div class="single-galeria">
+              <img src="img/img05.jpg" alt="" onclick="abrirGaleria('img/img05.jpg')"/>
+            </div>
+          <!-- sexta imagem -->
+          <div class="single-galeria w-2">
+              <img src="img/img06.jpg" alt="" onclick="abrirGaleria('img/img06.jpg')"/>
+            </div>
+            <!-- Fim das imagens -->
+        </div>
+      </section>
+
+      <div class="rodape">
+        <button  class="button">Contactar agora</button>
+        <a href="galeria.html">
+            <button class="test-drive button">Ver galeria</button>
+        </a>
+        <p class="texto-rodape">Chefe Milton torne seu dia doce!!! &copy;</p>
+    </div>
+
+      <script src="app.js"></script>
+  
+
+</body>
+
+<script src="menu.js"></script>
+<script src="script.js"></script>
+
+</html>

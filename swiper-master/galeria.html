@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/estilo.css">
+    <link rel="stylesheet" href="servico.css">
+    <link rel="stylesheet" href="/responsivo.css">
+</head>
+<body>
+
+
+    <header id="header">
+
+        <div class="interface">
+
+            <section class="logo">
+                <img class="logo-branca" src="./img/branca.png" alt="Logotipo do site">
+                <!-- <img class="logo-preta" src="images/icons8-cake-60.png" alt="Logotipo do site"> -->
+            </section>
+
+            <section class="menu-desktop">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/perfil.html">Perfil</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Serviços</a>
+                        </li> -->
+                        <!-- <li>
+                            <a href="#">Depoimentos</a>
+                        </li> -->
+                        <li>
+                            <a href="#">Ver Postagens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="btn-contato">
+                <a href="#">
+                    <button>Encomendar</button>
+                </a>
+            </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menumob-1"></div>
+                <div class="line-menumob-2"></div>
+            </div>
+
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="/index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="/perfil.html">Perfil</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Cursos</a>
+                        </li> -->
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <!-- <li>
+                            <a href="#">Contato</a>
+                        </li> -->
+                        <li>
+                            <a href="#">Ver Postagens</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </div>
+
+    </header>
+
+     <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image:url(https://sun9-5.userapi.com/impg/kPVeAaKComDRmnUc0Iufxuj0Y9KJZ3bZPxqziQ/4lVxeOdprcQ.jpg?size=483x604&quality=96&sign=b258c47cd2992e00eb47447108510a27&type=album)">
+                <div class="info">
+                    <h5>Bolo de Sobremesa <br> <span>10.000kz</span></h5>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/736x/47/14/b3/4714b35d6a805b3be117f96ea57e715d--wedding-stuff-dream-wedding.jpg)">
+                <div class="info">
+                    <h5><abbr title="Otimização para motores de busca">Bolo de Casamento</abbr> <br> <span>55.000kz</span></h5>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/736x/5f/e9/15/5fe915e63e3cd1f65d1f5978160f8d96.jpg)">
+                <div class="info">
+                    <h5>Bolo de Recheio <br> <span>5.000kz</span></h5>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/736x/b2/2b/36/b22b3666200a9e8cf418411200e26bbd.jpg)">
+                <div class="info">
+                    <h5>Pizza de Chouriço <br> <span>20.000kz</span></h5>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/originals/84/73/1a/84731aeec1ce7a802a5e87ee755f3ec9.jpg)">
+                <div class="info">
+                    <h5><abbr title="Consultória em estrategia de marketing">Pizza de Coração</abbr> <br> <span>50.000kz</span></h5>
+                </div>
+            </div>
+            <div class="swiper-slide" style="background-image:url(https://i.pinimg.com/originals/10/e5/8c/10e58c25b61d1252e8a4f5eac541d2cd.jpg)">
+                <div class="info">
+                    <h5>Argola <br> <span>150.000kz</span></h5>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <footer>
+        <div class="rodape">
+            <button  class="button">Encomendar agora</button>
+            <button class="test-drive button">Ver galeria</button>
+            <p class="texto-rodape">Chefe Milton torne seu dia doce!!! &copy;</p>
+        </div>
+    </footer>
+
+   
+    
+    <script src="/menu.js"></script>
+
+    <script src="swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+            rotate: 60,
+            stretch: 0,
+            depth: 100,
+            modifier: 5,
+            slideShadows : true,
+            },
+            pagination: {
+            el: '.swiper-pagination',
+            },
+        });
+    </script>
+
+
+    
+</body>
+</html>
